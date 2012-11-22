@@ -1,5 +1,13 @@
 /* @pjs preload="deusdiabo02.jpg, http://tec.marginalialab.com/files/2012/11/deusdiabo02.jpg"; */
 
+/********* HTML code:
+
+<script type="text/javascript" src="processing.js"></script>
+<canvas data-processing-sources="DeusDiaboProcessing.pde"></canvas>
+
+*****/
+
+
 PImage img0, img1;
 PGraphics tri, sem;
 
@@ -12,8 +20,8 @@ void setup() {
   //smooth();
   noStroke();
 
-  img0 = loadImage("http://tec.marginalialab.com/files/2012/11/deusdiabo02.jpg");
-  //img0 = loadImage("deusdiabo02.jpg");
+  //img0 = loadImage("http://tec.marginalialab.com/files/2012/11/deusdiabo02.jpg");
+  img0 = loadImage("deusdiabo02.jpg");
   img1 = createImage(img0.width, img0.height, ARGB);
 
   rt = rc = 0;
