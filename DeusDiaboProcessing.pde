@@ -1,10 +1,10 @@
-/* @pjs preload="deusdiabo02.jpg, http://tec.marginalialab.com/files/2012/11/deusdiabo02.jpg"; */
+/* @pjs preload="deusdiaboQDD.jpg, http://tec.marginalialab.com/files/2012/11/deusdiabo02.jpg"; */
 
 /********* HTML code:
-
+<!---
 <script type="text/javascript" src="processing.js"></script>
 <canvas data-processing-sources="DeusDiaboProcessing.pde"></canvas>
-
+--->
 *****/
 
 
@@ -16,12 +16,12 @@ float rt, rc;
 boolean needsUpdate;
 
 void setup() {
-  size(420, 480);
+  size(341, 520);
   //smooth();
   noStroke();
 
   //img0 = loadImage("http://tec.marginalialab.com/files/2012/11/deusdiabo02.jpg");
-  img0 = loadImage("deusdiabo02.jpg");
+  img0 = loadImage("deusdiaboQDD.jpg");
   img1 = createImage(img0.width, img0.height, ARGB);
 
   rt = rc = 0;
