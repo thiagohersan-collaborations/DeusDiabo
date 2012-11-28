@@ -46,9 +46,9 @@ void update() {
   sem.noStroke();
   sem.fill(255, 255, 0, 255);
   sem.pushMatrix();
-  sem.translate(width/2, height/2);
+  sem.translate(width/2, 0.6*height);
   sem.rotate(rc);
-  sem.arc(0, 0, min(width, height), min(width, height), 0, PI);
+  sem.arc(0, -min(width, height)/4, min(width, height), min(width, height), 0, PI);
   //sem.ellipse(0,0,min(width, height), min(width, height));
   sem.popMatrix();
   sem.endDraw();
@@ -60,7 +60,7 @@ void update() {
   tri.noStroke();
   tri.fill(255, 0, 255, 255);
   tri.pushMatrix();
-  tri.translate(width/2, height/2);
+  tri.translate(width/2, 0.6*height);
   tri.rotate(rt);
   tri.triangle(0, -min(width, height)/2, 0.75*min(width, height)/sqrt(3), min(width, height)/4, -0.75*min(width, height)/sqrt(3), min(width, height)/4);
   tri.popMatrix();
