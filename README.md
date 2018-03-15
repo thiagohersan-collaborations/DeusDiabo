@@ -1,1 +1,1 @@
-Interactive poster for (http://quadradao.com.br/)
+Interactive poster for [quadradão](http://quadradao.com.br/)
